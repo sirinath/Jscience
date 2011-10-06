@@ -127,7 +127,7 @@
          <TR>
          <TD CLASS="lineheight1 style5">
          <UL>
-            <LI> Implementation of <A HREF="http://www.unitsofmeasurement.org/">unitsofmeasurement.org</A> services</LI>
+            <LI> Implementation of <A HREF="http://www.unitsofmeasurement.org/">Units of Measurement</A> services.</LI>
 
             <LI> A<A HREF="api/org/jscience/geography/coordinates/package-summary.html#package_description">
             coordinates</A> module compliant with
@@ -175,7 +175,7 @@
          <TR>
          <TD BACKGROUND="doc/img/quotebg.gif">
          <DIV ALIGN="center"><SPAN CLASS="style7">
-                 <IMG src="doc/img/inprogress.jpg" /><B>JS</B>cience version 5.0 migration to <A href="http://java.net/projects/jscience">java.net</A> started (to be completed by the end of the week)</SPAN></DIV></TD>
+                 <IMG src="doc/img/inprogress.jpg" /><B>JS</B>cience version 5.0 migration to <A href="http://java.net/projects/jscience">java.net</A> started</SPAN></DIV></TD>
          </TR>
          <TR>
          <TD>
@@ -186,19 +186,12 @@
             <DIV ALIGN="center"><A HREF="api/index.html">API (not updated yet)</A></DIV>
             </TD>
             <TD BGCOLOR="#F3F5F8" WIDTH="33%">
-            <DIV ALIGN="center"> <A HREF="http://java.net/projects/jscience">Development
+            <DIV ALIGN="center"> <A HREF="http://java.net/projects/jscience">Development (java.net)
                </A></DIV></TD>
             <TD BGCOLOR="#F3F5F8" WIDTH="34%">
-            <DIV ALIGN="center"> <A HREF="https://maven.java.net/index.html">Maven Repository</A></DIV></TD>
+            <DIV ALIGN="center"> <A HREF="https://maven.java.net/index.html">Maven Repository (nexus)</A></DIV></TD>
             </TR>
          </TABLE></TD>
-         </TR>
-         <TR>
-         <TD BACKGROUND="doc/img/quotebg.gif">
-         <DIV ALIGN="center"><SPAN CLASS="style7">
-         A JRE 1.4 compatible binary is
-         also available <A HREF="jscience-vm14.jar">here</A> (Version 3.2.0)
-      </SPAN></DIV></TD>
          </TR>
       </TABLE>
       <BR>
@@ -231,36 +224,33 @@
             HEIGHT="32" SRC="doc/img/javolution.png" WIDTH="144"></A> for:
          </P>
          <UL>
-            <LI><A href="http://javolution.org/api/javolution/context/ConcurrentContext.html">Low-Level Concurrency:</A>
+            <LI><A href="http://javolution.org/target/site/apidocs/javolution/context/ConcurrentContext.html">Low-Level Concurrency:</A>
             To take advantage of multi-core processors automatically.
             Our <A HREF="doc/benchmark.html">benchmark</A> indicates that on a dual-processors
             our <code>Matrix&lt;Float64&gt;</code> or <code>Matrix&lt;Complex&gt;</code> multiplications
             are the fastest around (for a pure Java library).</LI>
-            <LI><A href="http://javolution.org/api/javolution/context/StackContext.html">Stack allocation:</A>
+            <LI><A href="http://javolution.org/target/site/apidocs/javolution/context/StackContext.html">Stack allocation:</A>
             To reduce garbage collection, decrease memory footprint and increase scalability.</LI>
-            <LI><A href="http://javolution.org/api/javolution/util/package-summary.html#package_description">Real-Time Behavior and Compliance:</A>
+            <LI><A href="http://javolution.org/target/site/apidocs/javolution/util/package-summary.html#package_description">Real-Time Behavior and Compliance:</A>
             <B>JS</B>cience can safely be used with
             <A HREF="http://rtsj.org">RTSJ</A> VMs without resulting into memory clashes or illegal access exceptions.</LI>
-            <LI><A href="http://javolution.org/api/javolution/xml/package-summary.html#package_description">Persistency/Networking:</A>
+            <LI><A href="http://javolution.org/target/site/apidocs/javolution/xml/package-summary.html#package_description">Persistency/Networking:</A>
             Fastest XML marshalling/unmarshalling around!</LI>
-            <LI>Easy and type-safe configuration management with the <A href="http://javolution.org/api/javolution/lang/Configurable.html">Configurable</A> class</LI>
+            <LI>Easy and type-safe configuration management with the <A href="http://javolution.org/target/site/apidocs/javolution/lang/Configurable.html">Configurable</A> class.
+            (e.g. <code>javolution.context.ConcurrentContext#MAXIMUM_CONCURRENCY</code> to adjust concurrency)</LI>
          </UL>
-         <B>JS</B>cience binary includes the latest <I><B>J</B>avolution</I> classes for the J2SE 1.5+ platform. </TD>
+         </TD>
          </TR>
          <TR>
-         <TD CLASS="lineheight1 style5" VALIGN="top"><B>JS</B>cience is composed of several OSGi modules
-             (<B>jscience-mathematics, jscience-physics, etc.</B>)
-         <I>Note: <A HREF="http://javolution.org/api/javolution/lang/Configurable.html">Configuration</A>
-         parameters are loaded from system properties at start-up (e.g.
-         <code>-Djavolution.context.ConcurrentContext#MAXIMUM_CONCURRENCY=0</code>
-         would disable concurrency).</I><BR><BR>
+         <TD CLASS="lineheight1 style5" VALIGN="top"><B>JS</B>cience is composed of several OSGi bundles
+             (<B>jscience-mathematics, jscience-physics, etc.</B>). These modules can also be used as standard java libraries.<BR><BR>
          <A
             HREF="doc/benchmark.html">Here </A> are the benchmark results
          on a Dual-Core CPU (T2050) @ 1.60 GHz running Windows XP.
          </TD>
          </TR>
          <TR>
-         <TD CLASS="lineheight1 style5" VALIGN="top"><B>JS</B>cience modules are
+         <TD CLASS="lineheight1 style5" VALIGN="top"><B>JS</B>cience bundles are
          <A HREF="doc/license.txt">free</A>; permission to use, copy,
          modify, and distribute these modules is freely granted, provided
          that copyright notices are preserved.</TD>
@@ -289,7 +279,7 @@
              WIDTH="85%">
          <TR>
          <TD CLASS="lineheight1 style5">
-         <P>Additional packages for 2011: </P>
+         <P>Packages/services to be added in 2011: </P>
          <UL>
             <LI>org.jscience.mathematics.transforms (FFT) </LI>
             <LI>org.jscience.physics.nuclear </LI>
@@ -307,14 +297,14 @@
          <P>Feel free to let us know if you are interested in developping
             new packages. It is very easy: </P>
          <UL>
-            <LI>Document well </LI>
-            <LI>Integrate with others packages (e.g. physical measures,
-            mathematics numbers, functions etc..) </LI>
+            <LI>Document if possible with use cases examples in the package description.</LI>
+            <LI>Integrate with others packages (using physical units, mathematics numbers, functions etc..) </LI>
             <LI>License your code under the JScience BSD License. </LI>
             <LI>Conform to our <A HREF="doc/coding_standard.txt">Coding Standard</A></LI>
-            <LI>Subsribe to the users@jscience.java.net mailing list</LI>
-         </UL>New packages are submitted by entering an enhancement issue at <A HREF="http://java.net/jira/browse/JSCIENCE">
-         java.net</A> and by attaching your code to the issue. Your code will then get reviewed, hopefully approved and integrated. </TD>
+            <LI>Subsribe to the users@jscience.java.net mailing list </LI>
+         </UL>New packages are submitted through enhancement issues at <A HREF="http://java.net/jira/browse/JSCIENCE">
+         java.net</A> and by attaching the source code to the issue. Then the code gets reviewed, hopefully approved and
+         integrated. </TD>
          </TR>
       </TABLE>
 
@@ -402,7 +392,7 @@
          <TD>
          <UL>
           <LI CLASS="lineheight1 style5"><B>June 20-25, 2011: JScience 5.0</B><BR>
-            Three initial modules released: mathematics, physics and economics</LI>
+            Three initial modules to be released: mathematics, physics and economics</LI>
 
          <LI CLASS="lineheight1 style5"><B>October 3, 2007: JScience 4.3/4.4</B><BR>
 
