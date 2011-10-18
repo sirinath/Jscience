@@ -11,7 +11,7 @@
     	<tstamp/>
         <property name="library"   value="jscience" />
         <property name="version"   value="4.3" />
-        <property name="release"   value="2" />
+        <property name="release"   value="1" />
         <property name="src"       value="src" />
         <property name="bin"       value="bin" />
         <property name="lib"       value="lib" />
